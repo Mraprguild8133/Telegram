@@ -1,0 +1,30 @@
+services:
+  - type: web
+    name: telegram-image-ai-bot
+    env: docker
+    repo: https://github.com/your-username/telegram-image-ai-bot.git
+    region: oregon
+    plan: starter
+    branch: main
+    dockerfilePath: ./Dockerfile
+    numInstances: 1
+    healthCheckPath: /health
+    envVars:
+      - key: PORT
+        value: 5000
+      - key: USE_WEBHOOK
+        value: true
+      - key: WEBHOOK_URL
+        sync: false
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: PHOTOROOM_API_KEY
+        sync: false
+      - key: REMOVEBG_API_KEY
+        sync: false
+      - key: MAX_REQUESTS_PER_USER
+        value: 10
+      - key: RATE_LIMIT_WINDOW
+        value: 3600
+      - key: MAX_FILE_SIZE
+        value: 20971520
