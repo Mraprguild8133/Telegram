@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram Image AI Bot</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        
+        .container {
+            max-width: 800px;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .header {
+            margin-bottom: 3rem;
+        }
+        
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .feature-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .feature-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .feature-card p {
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+        
+        .telegram-section {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .telegram-btn {
+            display: inline-block;
+            background: #0088cc;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: background 0.3s ease;
+        }
+        
+        .telegram-btn:hover {
+            background: #006699;
+        }
+        
+
+        
+        .quality-options {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .quality-badge {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎨 AI Image Editor Bot</h1>
+            <p>Transform your images with artificial intelligence</p>
+        </div>
+        
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">🎯</div>
+                <h3>Background Removal</h3>
+                <p>Automatically remove backgrounds from your images with AI precision using Remove.bg technology.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🎨</div>
+                <h3>AI Image Editing</h3>
+                <p>Enhance your photos with professional-grade AI editing powered by PhotoRoom's advanced algorithms.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">⬆️</div>
+                <h3>Quality Enhancement</h3>
+                <p>Upscale your images to stunning resolutions while maintaining crisp details and vibrant colors.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🖼️</div>
+                <h3>Wallpaper Conversion</h3>
+                <p>Transform any image into the perfect wallpaper with optimal aspect ratios and enhancement.</p>
+            </div>
+        </div>
+        
+        <div class="telegram-section">
+            <h2>🚀 Get Started</h2>
+            <p>Start using the bot on Telegram by clicking the button below!</p>
+            <a href="https://t.me/YourBotUsername" class="telegram-btn" target="_blank">
+                📱 Open in Telegram
+            </a>
+            
+            <div class="quality-options">
+                <div class="quality-badge">HD (720p)</div>
+                <div class="quality-badge">Full HD (1080p)</div>
+                <div class="quality-badge">4K UHD</div>
+                <div class="quality-badge">8K UHD</div>
+            </div>
+        </div>
+        
+
+        
+        <div style="margin-top: 2rem; opacity: 0.7; font-size: 0.9rem;">
+            <p><strong>Instructions:</strong></p>
+            <p>1. Send /start to the bot</p>
+            <p>2. Upload your image</p>
+            <p>3. Choose your desired operation</p>
+            <p>4. Download your enhanced image!</p>
+        </div>
+    </div>
+    
+
+</body>
+</html>
